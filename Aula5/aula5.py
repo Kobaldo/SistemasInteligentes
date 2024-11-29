@@ -20,8 +20,7 @@ dados_normalizados = scaler.fit_transform(dados)
 
 # Modelo revisado
 modelo = Sequential([
-    Dense(12, input_dim=2, activation='relu'),
-    Dense(8, activation='relu'),
+    Dense(8, input_dim=2, activation='relu'),
     Dense(6, activation='relu'),
     Dense(3, activation='softmax')
 ])
